@@ -26,7 +26,7 @@ export class LoginComponent {
           console.log(res);
           this.user.email = '';
           this.user.password = '';
-          
+          this.router.navigate(['/Employee']);
         },
         error: (err) => {
           this.isLoading=false
